@@ -15,23 +15,25 @@ class FlightService
 
     public function __construct()
     {
-        $this->baseUrl = config('duffel.api_url');
-        $this->token = config('duffel.access_token');
-        $this->version = config('duffel.version');
-        $this->prefix = config('duffel.url_prefix');
+        $this->baseUrl = config('laravel-duffel.api_url');
+        $this->token = config('laravel-duffel.access_token');
+        $this->version = config('laravel-duffel.version');
+        $this->prefix = config('laravel-duffel.url_prefix');
     }
 
     public function searchFlights(array $searchData)
     {
         try {
-            $response = Http::withToken($this->token)
-                ->acceptJson()
-                ->post($this->baseUrl."/".$this->prefix.'/offers', $searchData);
+            $url = $this->baseUrl."/".$this->prefix.'/offer_requests';
+            $response = Http::withHeaders([
+                    'Accept' => 'application/json',
+                    'Duffel-Version' => 'v2',
+                    'Content-Type' => 'application/json',
+                    'Authorization' => 'Bearer ' . $this->token,
+                ])
+                ->post($url, $searchData);
 
-            $response->throw(); // Will automatically throw exceptions for 4xx and 5xx
-
-            Log::info('Duffel Flight Search Success', ['response' => $response->json()]);
-
+            $response->throw();
             return $response->json();
         } catch (Exception $e) {
             Log::error('Duffel Flight Search Error', [
