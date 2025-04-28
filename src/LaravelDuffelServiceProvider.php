@@ -53,8 +53,12 @@ class LaravelDuffelServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-duffel');
 
         // Register the main class to use with the facade
-        $this->app->singleton('laravel-duffel', function () {
-            return new LaravelDuffel;
+        // $this->app->singleton('laravel-duffel', function () {
+        //     return new LaravelDuffel;
+        // });
+
+        $this->app->singleton('duffel', function ($app) {
+            return new \Misujon\LaravelDuffel\Services\FlightService();
         });
     }
 }

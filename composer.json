@@ -16,8 +16,9 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
-        "illuminate/support": "^8.0"
+        "php": ">=8.0",
+        "illuminate/support": "^9.0|^10.0",
+        "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
@@ -47,7 +48,7 @@
                 "Misujon\\LaravelDuffel\\LaravelDuffelServiceProvider"
             ],
             "aliases": {
-                "LaravelDuffel": "Misujon\\LaravelDuffel\\LaravelDuffelFacade"
+                "Duffel": "Misujon\\LaravelDuffel\\Facades\\Duffel"
             }
         }
     }
