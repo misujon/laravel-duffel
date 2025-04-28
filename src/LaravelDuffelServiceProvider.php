@@ -60,5 +60,9 @@ class LaravelDuffelServiceProvider extends ServiceProvider
         $this->app->singleton('duffel', function ($app) {
             return new \Misujon\LaravelDuffel\Services\FlightService();
         });
+
+        $this->app->singleton('duffel.resource', function ($app) {
+            return new \Misujon\LaravelDuffel\Services\ResourceService();
+        });
     }
 }
