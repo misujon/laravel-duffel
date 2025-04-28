@@ -196,6 +196,7 @@ Hi there! 👋 I'm a passionate Full Stack Web Developer with over 5 years of ex
 I specialize in data scraping, API integrations, responsive UI/UX, and full-cycle project management using Agile methodologies.  Every project I work on is built with care, innovation, and a strong commitment to excellence. If you enjoy my work, find it useful, or simply want to support an independent developer on their journey — feel free to **buy me a coffee!**  
 
 Your support truly means a lot and helps me keep doing what I love every day. 🚀
+
 **Thank you for being awesome! 🙌**
 
 <a href="https://www.buymeacoffee.com/misujon" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 100px !important;" ></a>
