@@ -1,11 +1,11 @@
 <?php
 
-namespace SoftminionTechnologyLimited\LaravelDuffel;
+namespace Misujon\LaravelDuffel;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \SoftminionTechnologyLimited\LaravelDuffel\Skeleton\SkeletonClass
+ * @see \Misujon\LaravelDuffel\Skeleton\SkeletonClass
  */
 class LaravelDuffelFacade extends Facade
 {

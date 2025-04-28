@@ -1,6 +1,6 @@
 <?php
 
-namespace SoftminionTechnologyLimited\LaravelDuffel;
+namespace Misujon\LaravelDuffel;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -3,7 +3,6 @@
     "description": "A fully featured Laravel package for integrating with Duffel’s Flight and Hotel Booking APIs. Provides an elegant, service-oriented structure for searching flights, creating orders, managing offers, and booking hotels using Duffel's modern travel APIs — all with built-in error handling, logging, and support for Laravel’s HTTP client and service container.",
     "keywords": [
         "misujon",
-        "softminion",
         "laravel-duffel"
     ],
     "homepage": "https://github.com/misujon/laravel-duffel",
@@ -26,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SoftminionTechnologyLimited\\LaravelDuffel\\": "src"
+            "Misujon\\LaravelDuffel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SoftminionTechnologyLimited\\LaravelDuffel\\Tests\\": "tests"
+            "Misujon\\LaravelDuffel\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +44,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SoftminionTechnologyLimited\\LaravelDuffel\\LaravelDuffelServiceProvider"
+                "Misujon\\LaravelDuffel\\LaravelDuffelServiceProvider"
             ],
             "aliases": {
-                "LaravelDuffel": "SoftminionTechnologyLimited\\LaravelDuffel\\LaravelDuffelFacade"
+                "LaravelDuffel": "Misujon\\LaravelDuffel\\LaravelDuffelFacade"
             }
         }
     }
