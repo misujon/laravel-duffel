@@ -92,6 +92,14 @@ $response = Duffel::fetchSeatMaps('off_0000AtXxW8gsgU0dRswvHG');
 
 ## 🌍 ResourceService Methods
 
+### Class for Resource Service
+
+Use all the methods by importing the class
+
+```use 
+Misujon\LaravelDuffel\Facades\DuffelResource;
+```
+
 ### 1. getAirlines()
 
 Fetch list of airlines.
