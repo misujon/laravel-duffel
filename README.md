@@ -199,4 +199,4 @@ Your support truly means a lot and helps me keep doing what I love every day. ğŸ
 
 **Thank you for being awesome! ğŸ™Œ**
 
-<a href="https://www.buymeacoffee.com/misujon" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 100px !important;" ></a>
+<a href="https://www.buymeacoffee.com/misujon" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 200px !important;" ></a>
