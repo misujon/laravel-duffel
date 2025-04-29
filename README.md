@@ -206,5 +206,3 @@ I specialize in data scraping, API integrations, responsive UI/UX, and full-cycl
 Your support truly means a lot and helps me keep doing what I love every day. 🚀
 
 **Thank you for being awesome! 🙌**
-
-<a href="https://www.buymeacoffee.com/misujon" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 50px !important;width: 200px !important;" ></a>
