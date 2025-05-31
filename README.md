@@ -166,6 +166,84 @@ $response = DuffelResource::getSingleCity('cit_0000Abcd987');
 
 ----------
 
+## 🌍 OrderService Methods
+
+### Class for Resource Service
+
+Use all the methods by importing the class
+
+```use 
+Misujon\LaravelDuffel\Facades\OrderService;
+```
+
+### 1. listOrders()
+
+Get a list of all created orders.
+
+```php
+Duffel::listOrders();
+```
+
+### 2. createOrder(array $data)
+
+Create a new flight order.
+
+```php
+Duffel::createOrder([
+    'selected_offers' => ['off_xxxx'],
+    'payments' => [[
+        'type' => 'balance',
+        'amount' => '100.00',
+        'currency' => 'USD'
+    ]],
+    'passengers' => [
+        ['id' => 'pas_xxxx']
+    ]
+]);
+```
+
+### 3. listOrderServices(string $orderId)
+
+List available services for a given order.
+
+```php
+Duffel::listOrderServices('ord_xxxx');
+```
+
+### 4. getOrder(string $orderId)
+
+Get the details of a specific order.
+
+```php
+Duffel::getOrder('ord_xxxx');
+```
+
+### 5. updateOrder(string $orderId, array $data)
+
+Update metadata for a specific order.
+
+```php
+Duffel::updateOrder('ord_xxxx', [
+    'metadata' => [
+        'purpose' => 'client booking'
+    ]
+]);
+```
+
+### 6. addServiceToOrder(string $orderId, array $data)
+
+Add a service (e.g. bag or seat) to an order.
+
+```php
+Duffel::addServiceToOrder('ord_xxxx', [
+    'services' => [
+        ['id' => 'ase_xxxx']
+    ]
+]);
+```
+
+----------
+
 ## 👉 Example Usage
 
 ```php
@@ -182,6 +260,11 @@ class FlightController extends Controller
     public function airline($id)
     {
         return Duffel::getSingleAirline($id);
+    }
+
+    public function createOrder()
+    {
+        return Duffel::createOrder([...]);
     }
 }
 ```
