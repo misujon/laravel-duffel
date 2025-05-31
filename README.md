@@ -166,7 +166,7 @@ $response = DuffelResource::getSingleCity('cit_0000Abcd987');
 
 ----------
 
-## 🌍 OrderService Methods
+## 📆 OrderService Methods
 
 ### Class for Resource Service
 
